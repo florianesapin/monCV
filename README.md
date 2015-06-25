@@ -3,50 +3,50 @@
 # Démarche création mon CV
 
 ## Site
-1. Création de la page web, utilisation de bootstrap (librairie pour le design)
+Création de la page web, utilisation de bootstrap (librairie pour le design)
 
 ## Environnement
 
-2. Télécharger Node sur internet
+Télécharger Node sur internet
 
 > Node est un serveur qui execute du java script.
 
-3. installation de npm (npm est un gestionnaire de modules intégré à Node.js)
+Installation de npm (npm est un gestionnaire de modules intégré à Node.js)
 
 > Un répertoire node_modules contient tous les modules installé.
 
-4. installation de yo, bower et grunt 3 outils permettant de gérer notre site (détaillé plus tard).
+Installation de yo, bower et grunt 3 outils permettant de gérer notre site (détaillé plus tard).
 ```sh 
 $ npm install -g yo bower grunt-cli
 ```
-5. Installation du générateur yeomann qui tourne sur Node
+Installation du générateur yeomann qui tourne sur Node
 ```sh 
  webapp$ npm install -g generator-webapp
  ```
  
 ## Démarche
  
-1. Créer un nouveau répertoire de travail
-2. Créer la structure avec yeomann avec la commande 
+Créer un nouveau répertoire de travail
+Créer la structure avec yeomann avec la commande 
 ```sh 
  webapp
 ```
 > Dans le fichier html créé, il y a des scripts ainsi que la partie <head> qu'il ne faut pas supprimer afin de ne pas perdre la gestion des dépendances au css et le refraichissement de la page web (expliquer plus tard).
 > Durant la création du projet il faut sélectionner ce avec quoi nous voulons gérer les références et il s'agit de bootstrap dans notre cas.
 
-3. npm et bower sont des outils qui gére les dépendances (cela signifie que l'on peut mettre à jour une librairie sans devoir changé pleins de chemins dans le code). Dans le répertoire de travail il y a le dossier bower-componenent contenant un répertoire par librairie installés et gérer par bower. L'ajout du script dans le head du fichier html à été faites automatiquement par bower.
+Npm et bower sont des outils qui gére les dépendances (cela signifie que l'on peut mettre à jour une librairie sans devoir changé pleins de chemins dans le code). Dans le répertoire de travail il y a le dossier bower-componenent contenant un répertoire par librairie installés et gérer par bower. L'ajout du script dans le head du fichier html à été faites automatiquement par bower.
 
 > (Deux fichiers sont créer bower.json et npm.json)
 > npm gère les déepndance avec les packages installés(grunt, yeomann...)
 > bower gère les dépendance avec les librairies installé (bootstrap, chartjs...)
 
-4. Lancer le task runner grunt qui permet de rafrachir la page web automatiquement et instantannement après les modifications dans le fichier source.
+Lancer le task runner grunt qui permet de rafrachir la page web automatiquement et instantannement après les modifications dans le fichier source.
 ```sh 
 grunt serve
 ```
-5. Nous avons utiliser bootswatch qui fournit des templates css que nous pouvons appliquer à notre site.
+Nous avons utiliser bootswatch qui fournit des templates css que nous pouvons appliquer à notre site.
 
-6. Créer le dist avec la commande, cette commande permet de compresser les fichiers pour le web (suppression des espace dans les fichiers, compression des images).
+Créer le dist avec la commande, cette commande permet de compresser les fichiers pour le web (suppression des espace dans les fichiers, compression des images).
 ```sh 
 grunt build
 ```
