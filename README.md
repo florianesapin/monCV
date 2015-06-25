@@ -7,19 +7,19 @@
 
 ## Environnement
 
-1. Télécharger Node sur internet
+2. Télécharger Node sur internet
 
 > Node est un serveur qui execute du java script.
 
-2. installation de npm (npm est un gestionnaire de modules intégré à Node.js)
+3. installation de npm (npm est un gestionnaire de modules intégré à Node.js)
 
 > Un répertoire node_modules contient tous les modules installé.
 
-3. installation de yo, bower et grunt 3 outils permettant de gérer notre site (détaillé plus tard).
+4. installation de yo, bower et grunt 3 outils permettant de gérer notre site (détaillé plus tard).
 ```sh 
 $ npm install -g yo bower grunt-cli
 ```
-4. Installation du générateur yeomann qui tourne sur Node
+5. Installation du générateur yeomann qui tourne sur Node
 ```sh 
  webapp$ npm install -g generator-webapp
  ```
