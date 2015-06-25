@@ -1,7 +1,5 @@
 img{
-
 width:120px;
-
 }
 h1{
 width:100%
@@ -20,12 +18,15 @@ margin-bottom:20px;
 #lang img{
 width:60px;
 height:60px;
-margin-right:67px;
+margin-bottom:15px;
 }
 nav{
 width:100%
 }
 div{
 text-align: center;
+}
+div.alleft p{
+float: left;
 }
 
