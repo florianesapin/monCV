@@ -8,8 +8,13 @@
 ## Environnement
 
 1. Télécharger Node sur internet
+
 > Node est un serveur qui execute du java script.
-2. installation de nmp
+
+2. installation de npm (npm est un gestionnaire de modules intégré à Node.js)
+
+> Un répertoire node_modules contient tous les modules installé.
+
 3. installation de yo, bower et grunt 3 outils permettant de gérer notre site (détaillé plus tard).
 ```sh 
 $ npm install -g yo bower grunt-cli
@@ -32,13 +37,16 @@ $ npm install -g yo bower grunt-cli
 3. npm et bower sont des outils qui gére les dépendances (cela signifie que l'on peut mettre à jour une librairie sans devoir changé pleins de chemins dans le code). Dans le répertoire de travail il y a le dossier bower-componenent contenant un répertoire par librairie installés et gérer par bower. L'ajout du script dans le head du fichier html à été faites automatiquement par bower.
 
 > (Deux fichiers sont créer bower.json et npm.json)
+> npm gère les déepndance avec les packages installés(grunt, yeomann...)
+> bower gère les dépendance avec les librairies installé (bootstrap, chartjs...)
 
 4. Lancer le task runner grunt qui permet de rafrachir la page web automatiquement et instantannement après les modifications dans le fichier source.
 ```sh 
 grunt serve
 ```
 5. Nous avons utiliser bootswatch qui fournit des templates css que nous pouvons appliquer à notre site.
-4. Créer le dist avec la commande, cette commande permet de compresser les fichiers pour le web (suppression des espace dans les fichiers, compression des images).
+
+6. Créer le dist avec la commande, cette commande permet de compresser les fichiers pour le web (suppression des espace dans les fichiers, compression des images).
 ```sh 
 grunt build
 ```
