@@ -1,7 +1,6 @@
 console.log('\'Allo \'Allo!');
 $(document).ready(function(){
 		$('a').smoothScroll();
-			
 		
 		$('div.progress').each(function(index, element){
 			var taux = $(element).children().attr( "aria-valuenow" );
@@ -29,6 +28,5 @@ $(document).ready(function(){
 			var ctx = canvas[0].getContext("2d");
 			var myDoughnutChart = new Chart(ctx).Doughnut(data,{percentageInnerCutout: 80});
 			
-			//$(element).css("backgroundColor", "Red");
 		});
 });

@@ -2,7 +2,8 @@ img{
 width:120px;
 }
 h1{
-width:100%
+width:100%;
+padding-bottom: 40px;
 }
 #entete{
 padding-left:20px;
@@ -32,7 +33,7 @@ float: left;
 div.btn-group{
 margin-bottom:10px;
 }
-h3.panel-title{
-
+table.info{
+margin-left:20px;
 }
 
