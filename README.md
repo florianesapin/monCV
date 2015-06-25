@@ -28,8 +28,11 @@ $ npm install -g yo bower grunt-cli
 ```
 > Dans le fichier html créé, il y a des scripts ainsi que la partie <head> qu'il ne faut pas supprimer afin de ne pas perdre la gestion des dépendances au css et le refraichissement de la page web (expliquer plus tard).
 > Durant la création du projet il faut sélectionner ce avec quoi nous voulons gérer les références et il s'agit de bootstrap dans notre cas.
+
 3. npm et bower sont des outils qui gére les dépendances (cela signifie que l'on peut mettre à jour une librairie sans devoir changé pleins de chemins dans le code). Dans le répertoire de travail il y a le dossier bower-componenent contenant un répertoire par librairie installés et gérer par bower. L'ajout du script dans le head du fichier html à été faites automatiquement par bower.
+
 > (Deux fichiers sont créer bower.json et npm.json)
+
 4. Lancer le task runner grunt qui permet de rafrachir la page web automatiquement et instantannement après les modifications dans le fichier source.
 ```sh 
 grunt serve
