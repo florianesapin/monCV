@@ -29,4 +29,7 @@ text-align: center;
 div.alleft p{
 float: left;
 }
+div.btn-group{
+margin-bottom:10px;
+}
 
