@@ -19,6 +19,11 @@ Installation de yo, bower et grunt 3 outils permettant de gérer notre site (dé
 ```sh 
 $ npm install -g yo bower grunt-cli
 ```
+
+> L'option -g permet d'installer dans le profil et non dans le repertoire propre au projet. On pourra donc le réutiliser pour un second projet.
+
+La commande yo propose les générateurs que nous pouvons utiliser. Un générateur permet de créer la strcuture (le squelette) de notre site web. 
+
 Installation du générateur yeomann qui tourne sur Node
 ```sh 
  webapp$ npm install -g generator-webapp
@@ -31,7 +36,7 @@ Créer la structure avec yeomann avec la commande
 ```sh 
  webapp
 ```
-> Dans le fichier html créé, il y a des scripts ainsi que la partie <head> qu'il ne faut pas supprimer afin de ne pas perdre la gestion des dépendances au css et le refraichissement de la page web (expliquer plus tard).
+> Maintenant plusieurs fichiers ont été automatiquement créés. Le fichier gruntfile contient des informations pour l'éxecution du serveur, les autre fichiers sont des fichiers de configuration. Dans le répertoire app, le fichier html à été créé, dans celui-ci il y a des scripts ainsi que la partie <head> qu'il ne faut pas supprimer afin de ne pas perdre la gestion des dépendances au css et le refraichissement de la page web (expliquer plus tard).
 > Durant la création du projet il faut sélectionner ce avec quoi nous voulons gérer les références et il s'agit de bootstrap dans notre cas.
 
 Npm et bower sont des outils qui gére les dépendances (cela signifie que l'on peut mettre à jour une librairie sans devoir changé pleins de chemins dans le code). Dans le répertoire de travail il y a le dossier bower-componenent contenant un répertoire par librairie installés et gérer par bower. L'ajout du script dans le head du fichier html à été faites automatiquement par bower.
