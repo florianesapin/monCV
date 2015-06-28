@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 $(document).ready(function(){
 		$('a').smoothScroll();
 		
@@ -14,14 +13,13 @@ $(document).ready(function(){
 			value: taux,
 			color:"#F7464A",
 			highlight: "#F7464A",
-			label: "Red",
+			label: "Acquis ",
 			height: "10px"
 			},
 			{
 			value: 100-taux,
 			color: "#FFFFFF",
 			highlight: "#FFFFFF",
-			label: "Withe"
 			}
 			]
 			
